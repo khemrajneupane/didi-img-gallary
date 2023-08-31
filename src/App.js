@@ -5,8 +5,8 @@ import Gallary from "./components/gallery";
 function App() {
   const images = [
     {
-      original: "/logo192.png",
-      thumbnail: "/logo192.png",
+      original: "https://github.com/indiraneupane/indira/blob/main/1.jpg",
+      thumbnail: "https://github.com/indiraneupane/indira/blob/main/1.jpg",
     },
     {
       original: "https://picsum.photos/id/1015/1000/600/",
