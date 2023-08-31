@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from "react";
+import ImageGallery from "react-image-gallery";
 import './App.css';
+import Gallary from "./components/gallery";
 
 function App() {
+  const images = [
+    {
+      original: "/logo192.png",
+      thumbnail: "/logo192.png",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Gallary items={images}/>
     </div>
   );
 }
