@@ -5,16 +5,40 @@ import Gallary from "./components/gallery";
 function App() {
   const images = [
     {
-      original: "https://github.com/indiraneupane/indira/blob/main/1.jpg",
-      thumbnail: "https://github.com/indiraneupane/indira/blob/main/1.jpg",
+      original: "/assets/1.jpg",
+      thumbnail: "/assets/1.jpg",
     },
     {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
+      original: "/assets/2.jpg",
+      thumbnail: "/assets/2.jpg",
     },
     {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
+      original: "/assets/5.jpg",
+      thumbnail: "/assets/5.jpg",
+    },
+    {
+      original: "/assets/6.jpg",
+      thumbnail: "/assets/6.jpg",
+    },
+    {
+      original: "/assets/7.jpg",
+      thumbnail: "/assets/7.jpg",
+    },
+    {
+      original: "/assets/8.jpg",
+      thumbnail: "/assets/8.jpg",
+    },
+    {
+      original: "/assets/10.jpg",
+      thumbnail: "/assets/10.jpg",
+    },
+    {
+      original: "/assets/12.jpg",
+      thumbnail: "/assets/12.jpg",
+    },
+    {
+      original: "/assets/15.jpg",
+      thumbnail: "/assets/15.jpg",
     },
   ];
   return (
