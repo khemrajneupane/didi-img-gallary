@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import IndiraGallary from "./components/gallery/didi";
 import BubaGallary from "./components/gallery/buba";
-
+import ReactPlayer from 'react-player'
 function App() {
   const [inputValue, setInputValue] = useState(''); // Initialize input value state
   const [message, setMessage] = useState('');
@@ -18,20 +18,32 @@ function App() {
   }
 }
   return (
-    <div className="container">
-          <div className="centered">
-      <input
-        type="text"
-        placeholder="एक गोप्य शब्द प्रवेश गर्नुहोस्।"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <button onClick={()=>checkWord()}>click</button>
-      <p>{message&&message}</p>
+    <><div className="container">
+      <div className="centered">
+        <input
+          type="text"
+          placeholder="एक गोप्य शब्द प्रवेश गर्नुहोस्।"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)} />
+        <button onClick={() => checkWord()}>click</button>
+        <p>{message && message}</p>
+      </div>
+      {(word === 'indira') && <MemoIndiraGallary />}
+      {word === 'ghanashyam' && <MemoBubaGallary />}
     </div>
-    {(word === 'indira')&&<MemoIndiraGallary />}
-    {word === 'ghanashyam'&&<MemoBubaGallary />}
+    <div className="centered">
+      <h2>आमाको सिलोक </h2>
+      <ul>
+        <li>
+        <audio controls>
+        <source src="/assets/audios/aamako_silok.mp4" type="audio/mp4" />
+            Your browser does not support the audio element.
+        </audio>
+        </li>
+      </ul>
+
     </div>
+    </>
   );
 }
 
