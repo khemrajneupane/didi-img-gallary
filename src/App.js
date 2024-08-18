@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import IndiraGallary from "./components/gallery/didi";
 import BubaGallary from "./components/gallery/buba";
-import ReactPlayer from 'react-player'
+
 function App() {
   const [inputValue, setInputValue] = useState(''); // Initialize input value state
   const [message, setMessage] = useState('');
